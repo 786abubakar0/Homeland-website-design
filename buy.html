@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Homeland- Buy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="buy.css">
+
+    <!-- nunito sans font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <!-- google material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="spinner"><i></i></div>
+    <div class="sticky-menu" id="sticky-menu">
+        <div class="close-icon" id="close-icon"><span class="material-symbols-outlined" style="font-size: 30px;">close</span></div>
+        <div><a href="index.html">Home</a></div>
+        <div class="sticky-active"><a href="buy.html">Buy</a></div>
+        <div><a href="rent.html">Rent</a></div>
+        <div id="sticky-property">
+            <div class="p"><a href="property.html">Properties</a> <span class="material-symbols-outlined sticky-arrow" id="sticky-arrow1">arrow_drop_down</span></div>
+            <div id="sticky-dropdown1">
+                <div><a>Condo</a></div>
+                <div><a>Property Land</a></div>
+                <div><a>Commercial Building</a></div>
+                <div> 
+                    <div class="p">Sub Menu <span class="material-symbols-outlined sticky-arrow" id="sticky-arrow2">arrow_drop_down</span></div>
+                    <div id="sticky-dropdown2">
+                        <div><a>Menu One</a></div>
+                        <div><a>Menu Two</a></div>
+                        <div><a>Menu Three</a></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div><a href="blog.html">Blog</a></div>
+        <div><a href="about.html">About</a></div>
+        <div><a href="contact.html">Contact</a></div>    
+    </div>
+    <div class="main-container" id="main-container">
+
+        <div class="landing-section" id="landing-section">
+            <div id="background-layer" class="fade-element"></div>
+            <div class="header">
+                <div class="website-name"><a href="index.html">Homeland<span class="website-dot">.</span></a></div>
+                <div class="navbar">
+                    <div><a href="index.html">Home</a></div>
+                    <div class="active"><a href="buy.html">Buy</a></div>
+                    <div><a href="rent.html">Rent</a></div>
+                    <div id="properties-menu">
+                        <span class="properties-menu-dropdown"><a href="property.html">Properties</a><span class="material-symbols-outlined">keyboard_arrow_down</span></span>
+                        <div class="arrow-container">
+                            <div>Condo</div>
+                            <div>Property Land</div>
+                            <div>Commercial Building</div>
+                            <div id="properties-submenu">
+                                <span class="properties-submenu-dropdown">Sub Menu<span class="material-symbols-outlined">arrow_right</span></span>
+                                <div id="properties-submenu-container">
+                                    <div>Menu One</div>
+                                    <div>Menu Two</div>
+                                    <div>Menu Three</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>                    
+                    
+                        <div><a href="blog.html">Blog</a></div>
+                    <div><a href="about.html">About</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+                </div>
+                <div id="menu"><span class="material-symbols-outlined" style="font-size: 50px;color: white;">menu</span></div>
+
+            </div>
+
+            <div class="content fade-element" id="slide-one">
+                <button class="tag">For Rent</button>
+                <div class="heading">871 CRENSHAW BLVD</div>
+                <div class="price">$2,250,500</div>
+                <button class="button">SEE DETAILS</button>    
+            </div>
+            <div class="content fade-element" id="slide-two">
+                <button class="tag">For Sale</button>
+                <div class="heading">625 S. BERENDO ST</div>
+                <div class="price">$1,000,500</div>
+                <button class="button">SEE DETAILS</button>    
+            </div>
+
+            <div class="left-arrow" id="left-arrow"><span class="material-symbols-outlined">arrow_back</span></div>
+            <div class="right-arrow" id="right-arrow"><span class="material-symbols-outlined">arrow_forward</span></div>
+        </div>
+
+        <div class="search-section">
+            <div>
+                <div class="name">LISTING TYPES</div>
+                <select name="listing-options">
+                    <option>Condo</option>
+                    <option>Commercial Building</option>
+                    <option>Land Property</option>
+                </select>
+            </div>
+
+            <div>
+                <div class="name">OFFER TYPE</div>
+                <select name="offer-options">
+                    <option>For Sale</option>
+                    <option>For Rent</option>
+                    <option>For Lease</option>
+                </select>
+            </div>
+
+            <div>
+                <div class="name">SELECT CITY</div>
+                <select name="city-options">
+                    <option>New York</option>
+                    <option>London</option>
+                    <option>Japan</option>
+                </select>
+            </div>
+
+            <div>
+                <button id="search">Search</button>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <div class="view-options">
+                <span><a href="index.html"><span class="material-symbols-outlined" id="view_list">grid_view</span></a></span>
+                <span><a href="view-list.html"><span class="material-symbols-outlined" id="grid_view">view_list</span></a></span>
+            </div>
+            <div class="filter-options">
+                <div class="active">All</div>
+                <div class="vertical-line"></div>
+                <div>Rent</div>
+                <div class="vertical-line"></div>
+                <div>Sale</div>
+                <div class="filter-dropdown">
+                    <select>
+                        <option>Sort by</option>
+                        <option>Price Ascending</option>
+                        <option>Price Descending</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="properties-section">
+            <div class="properties-item">
+                <div class="image">
+                    <img src="images/img_1.jpg" alt="">
+                    <div class="image-text">
+                        <div class="sale-tag">SALE</div>
+                        <div class="image-button"><button class="not-favorite"><span class="material-symbols-outlined">favorite</span></button></div>
+                    </div>
+                </div>
+
+                <div class="properties-item-details">
+                    <div class="heading">625 S. Berendo St</div>
+                    <div class="location"><span class="material-symbols-outlined">location_on</span>625 S. Berendo St Unit 607 Los Angeles, CA 90005</div>
+                    <div class="price">$2,265,500</div>
+                    <div class="property-feature-group">
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Beds</div>
+                            <div class="property-feature-item-detail">2+</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Baths</div>
+                            <div class="property-feature-item-detail">2</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">SQ FT</div>
+                            <div class="property-feature-item-detail">7,000</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="properties-item">
+                <div class="image">
+                    <img src="images/img_2.jpg" alt="">
+                    <div class="image-text">
+                        <div class="sale-tag">SALE</div>
+                        <div class="image-button"><button class="favorite not-favorite"><span class="material-symbols-outlined">favorite</span></button></div>
+                    </div>
+                </div>
+
+                <div class="properties-item-details">
+                    <div class="heading">871 Crenshaw Blvd</div>
+                    <div class="location"><span class="material-symbols-outlined">location_on</span>1 New York Ave, Warners Bay, NSW 2282</div>
+                    <div class="price">$2,265,500</div>
+                    <div class="property-feature-group">
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Beds</div>
+                            <div class="property-feature-item-detail">2+</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Baths</div>
+                            <div class="property-feature-item-detail">2</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">SQ FT</div>
+                            <div class="property-feature-item-detail">5,500</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="properties-item">
+                <div class="image">
+                    <img src="images/img_3.jpg" alt="">
+                    <div class="image-text">
+                        <div class="sale-tag">SALE</div>
+                        <div class="image-button"><button class="not-favorite"><span class="material-symbols-outlined">favorite</span></button></div>
+                    </div>
+                </div>
+
+                <div class="properties-item-details">
+                    <div class="heading">853 S Lucerne Blvd</div>
+                    <div class="location"><span class="material-symbols-outlined">location_on</span>853 S Lucerne Blvd Unit 101 Los Angeles, CA 90005</div>
+                    <div class="price">$2,265,500</div>
+                    <div class="property-feature-group">
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Beds</div>
+                            <div class="property-feature-item-detail">2+</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Baths</div>
+                            <div class="property-feature-item-detail">2</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">SQ FT</div>
+                            <div class="property-feature-item-detail">1,620</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="properties-item">
+                <div class="image">
+                    <img src="images/img_4.jpg" alt="">
+                    <div class="image-text">
+                        <div class="sale-tag">SALE</div>
+                        <div class="image-button"><button class="not-favorite"><span class="material-symbols-outlined">favorite</span></button></div>
+                    </div>
+                </div>
+
+                <div class="properties-item-details">
+                    <div class="heading">625 S. Berendo St</div>
+                    <div class="location"><span class="material-symbols-outlined">location_on</span>625 S. Berendo St Unit 607 Los Angeles, CA 90005</div>
+                    <div class="price">$2,265,500</div>
+                    <div class="property-feature-group">
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Beds</div>
+                            <div class="property-feature-item-detail">2+</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Baths</div>
+                            <div class="property-feature-item-detail">2</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">SQ FT</div>
+                            <div class="property-feature-item-detail">7,000</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="properties-item">
+                <div class="image">
+                    <img src="images/img_5.jpg" alt="">
+                    <div class="image-text">
+                        <div class="sale-tag">SALE</div>
+                        <div class="image-button"><button class="not-favorite"><span class="material-symbols-outlined">favorite</span></button></div>
+                    </div>
+                </div>
+
+                <div class="properties-item-details">
+                    <div class="heading">871 Crenshaw Blvd</div>
+                    <div class="location"><span class="material-symbols-outlined">location_on</span>1 New York Ave, Warners Bay, NSW 2282</div>
+                    <div class="price">$2,265,500</div>
+                    <div class="property-feature-group">
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Beds</div>
+                            <div class="property-feature-item-detail">2+</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Baths</div>
+                            <div class="property-feature-item-detail">2</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">SQ FT</div>
+                            <div class="property-feature-item-detail">5,500</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="properties-item">
+                <div class="image">
+                    <img src="images/img_6.jpg" alt="">
+                    <div class="image-text">
+                        <div class="sale-tag">SALE</div>
+                        <div class="image-button"><button class="not-favorite"><span class="material-symbols-outlined">favorite</span></button></div>
+                    </div>
+                </div>
+
+                <div class="properties-item-details">
+                    <div class="heading">853 S Lucerne Blvd</div>
+                    <div class="location"><span class="material-symbols-outlined">location_on</span>853 S Lucerne Blvd Unit 101 Los Angeles, CA 90005</div>
+                    <div class="price">$2,265,500</div>
+                    <div class="property-feature-group">
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Beds</div>
+                            <div class="property-feature-item-detail">2+</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Baths</div>
+                            <div class="property-feature-item-detail">2</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">SQ FT</div>
+                            <div class="property-feature-item-detail">1,620</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+             <div class="properties-item">
+                <div class="image">
+                    <img src="images/img_7.jpg" alt="">
+                    <div class="image-text">
+                        <div class="sale-tag">SALE</div>
+                        <div class="image-button"><button class="not-favorite"><span class="material-symbols-outlined">favorite</span></button></div>
+                    </div>
+                </div>
+
+                <div class="properties-item-details">
+                    <div class="heading">625 S. Berendo St</div>
+                    <div class="location"><span class="material-symbols-outlined">location_on</span>625 S. Berendo St Unit 607 Los Angeles, CA 90005</div>
+                    <div class="price">$2,265,500</div>
+                    <div class="property-feature-group">
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Beds</div>
+                            <div class="property-feature-item-detail">2+</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Baths</div>
+                            <div class="property-feature-item-detail">2</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">SQ FT</div>
+                            <div class="property-feature-item-detail">7,000</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="properties-item">
+                <div class="image">
+                    <img src="images/img_8.jpg" alt="">
+                    <div class="image-text">
+                        <div class="sale-tag">SALE</div>
+                        <div class="image-button"><button class="not-favorite"><span class="material-symbols-outlined">favorite</span></button></div>
+                    </div>
+                </div>
+
+                <div class="properties-item-details">
+                    <div class="heading">871 Crenshaw Blvd</div>
+                    <div class="location"><span class="material-symbols-outlined">location_on</span>1 New York Ave, Warners Bay, NSW 2282</div>
+                    <div class="price">$2,265,500</div>
+                    <div class="property-feature-group">
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Beds</div>
+                            <div class="property-feature-item-detail">2+</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Baths</div>
+                            <div class="property-feature-item-detail">2</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">SQ FT</div>
+                            <div class="property-feature-item-detail">5,500</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="properties-item">
+                <div class="image">
+                    <img src="images/img_1.jpg" alt="">
+                    <div class="image-text">
+                        <div class="sale-tag">SALE</div>
+                        <div class="image-button"><button class="not-favorite"><span class="material-symbols-outlined">favorite</span></button></div>
+                    </div>
+                </div>
+
+                <div class="properties-item-details">
+                    <div class="heading">853 S Lucerne Blvd</div>
+                    <div class="location"><span class="material-symbols-outlined">location_on</span>853 S Lucerne Blvd Unit 101 Los Angeles, CA 90005</div>
+                    <div class="price">$2,265,500</div>
+                    <div class="property-feature-group">
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Beds</div>
+                            <div class="property-feature-item-detail">2+</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">Baths</div>
+                            <div class="property-feature-item-detail">2</div> 
+                        </div>
+
+                        <div class="property-feature">
+                            <div class="property-feature-item-name">SQ FT</div>
+                            <div class="property-feature-item-detail">1,620</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>  
+           
+        </div>
+
+        <div class="pagination-section">
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <div>...</div>
+            <button>10</button>
+            
+        </div>
+
+        <div class="why-choose-section">
+            <div class="why-choose-text">
+                <div class="choose-heading">Why Choose Us?</div>
+                <div class="choose-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maiores quisquam saepe architecto error corporis aliquam. Cum ipsam a consectetur aut sunt sint animi, pariatur corporis, eaque, deleniti cupiditate officia.</div>
+            </div>
+
+            <div class="why-choose-cards">
+                <div class="why-choose-cards-item">
+                    <div class="item-image"><span class="material-symbols-outlined">corporate_fare</span></div>
+                    <div class="item-heading">Research Subburbs</div>
+                    <div class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex odio molestia.</div>
+                    <div class="item-readmore">READ MORE</div>
+                </div>
+
+                <div class="why-choose-cards-item">
+                    <div class="item-image"><span class="material-symbols-outlined">sell</span></div>
+                    <div class="item-heading">Sold Houses</div>
+                    <div class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex odio molestia.</div>
+                    <div class="item-readmore">READ MORE</div>
+                </div>
+
+                  <div class="why-choose-cards-item">
+                    <div class="item-image"><span class="material-symbols-outlined">speed_camera</span></div>
+                    <div class="item-heading">Security Priority</div>
+                    <div class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex odio molestia.</div>
+                    <div class="item-readmore">READ MORE</div>
+                </div>
+
+              
+
+                
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <div class="footer-heading">ABOUT HOMELAND</div>
+                    <span class="footer-line"></span>   
+                    <div class="footer-text1  right-border">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-heading">NAVIGATIONS</div>
+                    <span class="footer-line"></span>
+                    <div class="footer-item-links">
+                        <div>Home</div>
+                        <div>Rent</div>
+                        <div>Buy</div>
+                        <div>Properties</div>
+                    </div>
+                </div>
+
+                <div class="footer-item center">
+                    <div class="footer-heading"> FOLLOW US</div>
+                    <span class="footer-line"></span>
+                    <div class="footer-item-links footer-item-social">
+                        <div><i class="fa fa-facebook"></i>&nbspFacebook</div>
+                        <div><i class="fa fa-twitter"></i>&nbspTwitter</div>
+                        <div><i class="fa fa-linkedin"></i>&nbspLinkedIn</div>
+                        <div><i class="fa fa-instagram"></i>&nbspInstagram</div>            
+                    </div>
+                </div>
+                <div class="footer-item"></div>
+
+            </div>
+            <div class="footer-copyright">Copyright ©2025 All rights reserved | This template is made by Colorlib</div>
+        </div>
+
+    <script src="Script.js"></script>
+
+</body>
+</html>
